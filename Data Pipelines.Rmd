@@ -1,0 +1,61 @@
+---
+title: "Data Pipelines"
+output: html_notebook
+---
+```{r}
+library(tidyverse)
+```
+```{r}
+write_csv(iris, "iris.csv")
+```
+
+##read
+```{r}
+iris_raw = read_csv("iris.csv" )
+```
+```{r}
+library(readxl)
+library(writexl)
+write_xlsx(iris, "iris.xlsx")
+read_xlsx("iris.xlsx")
+```
+```{r}
+library(haven)
+haven 
+```
+```{r}
+DataExplorer::create_report(iris_raw, y="Species")
+```
+
+## Querying rows
+```{r}
+iris_raw %>% 
+  head(10)
+iris_raw %>% 
+  tail(10)
+iris_raw %>% 
+  sample_n(10)
+iris_raw %>% 
+  sample_frac(0.10)
+```
+WHERE...is true for querying data
+```{r}
+iris_raw %>% 
+  filter(Species=="setosa", Sepal.Length > 5.5)
+```
+
+Compound criteria e.g. equal, less than/greater than, not equal
+```{r}
+TRUE & FALSE
+```
+```{r}
+iris_raw %>% 
+  filter_if(is.numeric, any_vars( . < 5))
+```
+
+```{r}
+
+```
+git config --global user.name "Lynsey Drewett"
+git config --global user.email "lmd68@cam.ac.uk"
+
