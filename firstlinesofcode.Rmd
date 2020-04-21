@@ -23,3 +23,51 @@ Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by press
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+git config --global user.email "lmd68@cam.ac.uk"
+  git config --global user.name "Lynsey Drewett"
+  
+```{r}
+diameter = 12
+
+3i
+
+c(
+"This is text",
+'this is also text'
+)
+```
+
+
+```{r}
+#convert TRUE to an integer
+TRUE
+FALSE
+as.integer(TRUE)
+```
+
+
+```{r}
+class(Sys.time())
+class(Sys.timezone())
+```
+
+
+```{r}
+“Do you think this is a game?, he said. No, I think Jenga’s a game, Archer responded
+```
+
+
+```{r}
+bloodtypes <- factor
+```
+
+
+```{r}
+as.integer = "TRUE"
+
+```
+
+
+```{r}
+Sys.time()
+as.integer ("TRUE")
