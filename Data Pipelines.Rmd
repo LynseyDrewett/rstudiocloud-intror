@@ -53,9 +53,35 @@ iris_raw %>%
   filter_if(is.numeric, any_vars( . < 5))
 ```
 
-```{r}
-
-```
 git config --global user.name "Lynsey Drewett"
-git config --global user.email "lmd68@cam.ac.uk"
+git config --global user.email "lmd68@cam.ac.uk
+```
+```{r}
+install.packages("ggplot2movies")
+```
+```{r}
+library("ggplot2movies")
+library("movies")
+ggplot2movies_raw
+movies_raw
+```
+
+```{r}
+ggplot2movies::movies
+```
+```{r}
+movies_raw %>%
+
+
+filter(Action == "TRUE")```
+```{r}
+movies %>%
+```
+
+
+```{r}
+movies %>% 
+  ggplot() + 
+  aes()
+```
 
